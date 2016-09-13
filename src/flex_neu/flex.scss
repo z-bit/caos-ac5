@@ -1,0 +1,84 @@
+$base-font-size: 10px;
+
+$header-height: 5rem;
+$header-background-color: red;
+
+$columns: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+  color: #fff;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.main-header {
+  font-size: 1.5rem;
+  height: $header-height;
+  background-color: $header-background-color;
+}
+
+main {
+  flex: 1;
+}
+
+.main-aside {
+  width: 30rem !important;
+  background-color: green;
+  
+  > .row {
+    overflow-y: hidden;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    + .row {
+      border-top: 1px solid;
+    }
+  }
+}
+
+.main-section {
+  background: #000;
+  flex-grow: 1;
+}
+
+
+///////////////////////////////////////////////
+.row {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollable {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0px;
+}
+
+@each $column in $columns {
+  .col-#{$column} {
+    width: #{$column / 12 * 100%};
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}

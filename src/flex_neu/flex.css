@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  color: #fff; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.main-header {
+  font-size: 1.5rem;
+  height: 5rem;
+  background-color: red; }
+
+main {
+  flex: 1; }
+
+.main-aside {
+  width: 30rem !important;
+  background-color: green; }
+  .main-aside > .row {
+    overflow-y: hidden;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    .main-aside > .row + .row {
+      border-top: 1px solid; }
+
+.main-section {
+  background: #000;
+  flex-grow: 1; }
+
+.row {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin: 0 -1rem; }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.scrollable {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0px; }
+
+.col-1 {
+  width: 8.33333%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-2 {
+  width: 16.66667%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-3 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-4 {
+  width: 33.33333%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-5 {
+  width: 41.66667%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-6 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-7 {
+  width: 58.33333%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-8 {
+  width: 66.66667%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-9 {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-10 {
+  width: 83.33333%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-11 {
+  width: 91.66667%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+.col-12 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; }
+
+/*# sourceMappingURL=flex.css.map */
